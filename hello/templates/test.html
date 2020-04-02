@@ -1,0 +1,35 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <script src="https://www.gstatic.com/firebasejs/7.11.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.11.0/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.11.0/firebase-firestore.js"></script>
+
+    <div class="textfield">
+      <input type="text" id="roomId" />
+      <label for="textfield">Room ID</label>
+    </div>
+
+    <div class="textfield">
+      <input type="text" id="myName" />
+      <label for="textfield">myname</label>
+    </div>
+
+    <div class="textfield">
+      <input type="text" id="peerName" />
+      <label for="textfield">peername</label>
+    </div>
+
+    <button id="testbtn">testtest</button>
+    <video id="myVideo" src=""></video>
+    <video id="peerVideo" src=""></video>
+    <script src="{% static 'webrtc.js' %}"></script>
+  </body>
+</html>
